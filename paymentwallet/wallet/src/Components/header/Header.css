@@ -1,0 +1,39 @@
+.user-color{
+    background-color:#271745;
+ 
+}
+.user-navcolor{
+
+    color: white!important;
+}
+.hov:hover {
+    color:lightblue!important;
+    border-bottom: 1px solid lightblue!important;  
+}
+.ho:hover{
+    transition: all 0.3s ease !important;
+
+} 
+.user-login-color{
+      background-color: #009FAC!important;
+      color: black!important;     
+}
+.user-login-color:hover{
+    background-color: lightblue!important;
+}
+.user-logout{
+
+     background-color: orange!important;
+     color: black!important;  
+}
+.user-logout:hover{
+
+    background-color: lightcyan!important;
+    font-weight: bold;
+    color: black!important;  
+}
+
+.paper{
+    padding: 1em;
+    box-shadow: 5px 5px 20px #271745!important;
+}

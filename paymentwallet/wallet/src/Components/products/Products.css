@@ -1,0 +1,56 @@
+h5{
+    color: black;
+}
+.card-text{
+    color: black;
+    text-align: center;
+}
+.card-body{
+    background-color: rgb(219, 226, 226) 
+}
+
+.usermargin{
+
+    margin-top: 18vh;
+}
+
+.ho:hover{
+
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    -webkit-transform: scale (1.1) !important;
+    -ms-transform: scale(1.1) !important;
+    transform: scale(1.03) !important;
+    z-index: 2;
+
+}
+.user-height{
+
+    height: 35vh;
+}
+.user-Button{
+
+    border: none;
+    outline: none;
+    height: 40px!important;
+    width: 40%!important;
+    background-color: black!important;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold!important;  
+    
+}
+
+.user-Button:hover{
+    background: white!important;
+    border: 1px solid;
+    color: black!important;
+}
+
+.paper{
+    padding: 1em;
+    background-color: white;
+    box-shadow: 5px 5px 20px #271745!important;
+}
