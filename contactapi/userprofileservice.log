@@ -720,3 +720,219 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
 2023-01-16 14:18:15.600  INFO 256 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-01-16 14:47:42.382  INFO 9824 --- [main] i.s.userprofile.UserprofileApplication   : Starting UserprofileApplication using Java 17.0.5 on LAPTOP-RIEJ6Q5B with PID 9824 (C:\Users\Admin\Assignments\Practice\SpringBootHackathorn\contactapi\userprofile\target\classes started by Admin in C:\Users\Admin\Assignments\Practice\SpringBootHackathorn\contactapi)
+2023-01-16 14:47:42.421 DEBUG 9824 --- [main] i.s.userprofile.UserprofileApplication   : Running with Spring Boot v2.7.8-SNAPSHOT, Spring v5.3.25
+2023-01-16 14:47:42.423  INFO 9824 --- [main] i.s.userprofile.UserprofileApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-16 14:47:43.892  INFO 9824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-16 14:47:44.159  INFO 9824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 245 ms. Found 1 JPA repository interfaces.
+2023-01-16 14:47:44.549  INFO 9824 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0ee9a9ba-5df5-3f0f-a612-7660b716ec34
+2023-01-16 14:47:45.413  INFO 9824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-16 14:47:45.413  INFO 9824 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-16 14:47:45.415  INFO 9824 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-16 14:47:45.415  INFO 9824 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-16 14:47:45.417  INFO 9824 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-16 14:47:45.447  INFO 9824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 14:47:45.448  INFO 9824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 14:47:45.646  INFO 9824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 14:47:45.647  INFO 9824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3079 ms
+2023-01-16 14:47:46.141  INFO 9824 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-16 14:47:46.262  INFO 9824 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-16 14:47:46.641  INFO 9824 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-16 14:47:46.820  INFO 9824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-16 14:47:48.152  INFO 9824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-16 14:47:48.219  INFO 9824 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-16 14:47:49.867  INFO 9824 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-16 14:47:49.874  INFO 9824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-16 14:47:49.966  WARN 9824 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-16 14:47:50.060  INFO 9824 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'contacts-service' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 14:47:52.088  INFO 9824 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-16 14:47:52.239  WARN 9824 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-16 14:47:52.275  INFO 9824 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-16 14:47:52.394  INFO 9824 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-16 14:47:52.400  INFO 9824 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 14:47:52.427  INFO 9824 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-16 14:47:52.427  INFO 9824 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-16 14:47:52.428  INFO 9824 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-16 14:47:52.428  INFO 9824 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-16 14:47:52.428  INFO 9824 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-16 14:47:52.428  INFO 9824 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-16 14:47:52.429  INFO 9824 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-16 14:47:52.776  INFO 9824 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-16 14:47:52.778  INFO 9824 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-16 14:47:52.781  INFO 9824 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-16 14:47:52.786  INFO 9824 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1673860672785 with initial instances count: 1
+2023-01-16 14:47:52.789  INFO 9824 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-PROFILE-SERVICE with eureka with status UP
+2023-01-16 14:47:52.790  INFO 9824 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1673860672790, current=UP, previous=STARTING]
+2023-01-16 14:47:52.792  INFO 9824 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/host.docker.internal:user-profile-service:9001: registering service...
+2023-01-16 14:47:52.841  INFO 9824 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/host.docker.internal:user-profile-service:9001 - registration status: 204
+2023-01-16 14:47:52.849  INFO 9824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-01-16 14:47:52.849  INFO 9824 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2023-01-16 14:47:53.293  INFO 9824 --- [main] i.s.userprofile.UserprofileApplication   : Started UserprofileApplication in 11.624 seconds (JVM running for 12.263)
+2023-01-16 14:52:01.680  INFO 9824 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 14:52:01.683  INFO 9824 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 14:52:01.689  INFO 9824 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-01-16 14:52:01.772  INFO 9824 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-16 14:52:01.775  INFO 9824 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-16 14:52:03.127  INFO 9824 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the After Returning advice
+2023-01-16 14:52:03.128  INFO 9824 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-16 14:52:03.130  INFO 9824 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Returned value is <201 CREATED Created,in.stackroute.userprofile.model.User@30a3a7bd,[]>
+2023-01-16 14:52:03.131  INFO 9824 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-16 14:52:03.132  INFO 9824 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-16 14:52:03.133  INFO 9824 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : registerUser completed execution
+2023-01-16 14:52:19.890  INFO 9824 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-16 14:52:19.891  INFO 9824 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 14:52:20.012  INFO 9824 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Inside the After Throwing advice
+2023-01-16 14:52:20.012  INFO 9824 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Target method is authenticateUser
+2023-01-16 14:52:20.012  INFO 9824 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Exception thrown InValid credentials
+2023-01-16 14:52:20.013  INFO 9824 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-16 14:52:20.013  INFO 9824 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 14:52:20.013  INFO 9824 --- [http-nio-9001-exec-2] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-16 14:52:30.734  INFO 9824 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-16 14:52:30.735  INFO 9824 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 14:52:31.611  INFO 9824 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the After Returning advice
+2023-01-16 14:52:31.611  INFO 9824 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 14:52:31.612  INFO 9824 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Returned value is <200 OK OK,{status=200, email=Puneet@gmail.com, jwt_token=eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2NzM4NjgxNTAsImlhdCI6MTY3Mzg2MDk1MCwic3ViIjoiUHVuZWV0QGdtYWlsLmNvbSIsImlzcyI6ImluLnN0YWNrcm91dGUifQ._NkY5yNMOfvlY-ZsDfpbqjfTtM8i7KyYCQAnlvN4Jc3GL_47pqZhRaobPrPvne6GrC-_p4CP9gdAeZQvwM8-xQ},[]>
+2023-01-16 14:52:31.612  INFO 9824 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-16 14:52:31.613  INFO 9824 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 14:52:31.613  INFO 9824 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-16 14:52:52.444  INFO 9824 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 14:57:52.451  INFO 9824 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 15:02:52.458  INFO 9824 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 15:07:52.511  INFO 9824 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 15:12:52.513  INFO 9824 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 15:13:49.408  INFO 9824 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-16 15:13:49.410  INFO 9824 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-16 15:13:50.084  INFO 9824 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Inside the After Throwing advice
+2023-01-16 15:13:50.084  INFO 9824 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-16 15:13:50.085  INFO 9824 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Exception thrown User with the email already Exists
+2023-01-16 15:13:50.085  INFO 9824 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-16 15:13:50.085  INFO 9824 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-16 15:13:50.085  INFO 9824 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : registerUser completed execution
+2023-01-16 15:14:00.609  INFO 9824 --- [http-nio-9001-exec-6] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-16 15:14:00.611  INFO 9824 --- [http-nio-9001-exec-6] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-16 15:14:01.152  INFO 9824 --- [http-nio-9001-exec-6] i.s.userprofile.aspect.LoggingAspect     : Inside the After Returning advice
+2023-01-16 15:14:01.153  INFO 9824 --- [http-nio-9001-exec-6] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-16 15:14:01.165  INFO 9824 --- [http-nio-9001-exec-6] i.s.userprofile.aspect.LoggingAspect     : Returned value is <201 CREATED Created,in.stackroute.userprofile.model.User@20a9e907,[]>
+2023-01-16 15:14:01.165  INFO 9824 --- [http-nio-9001-exec-6] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-16 15:14:01.165  INFO 9824 --- [http-nio-9001-exec-6] i.s.userprofile.aspect.LoggingAspect     : Target method is registerUser
+2023-01-16 15:14:01.166  INFO 9824 --- [http-nio-9001-exec-6] i.s.userprofile.aspect.LoggingAspect     : registerUser completed execution
+2023-01-16 15:14:15.143  INFO 9824 --- [http-nio-9001-exec-7] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-16 15:14:15.162  INFO 9824 --- [http-nio-9001-exec-7] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 15:14:15.184  INFO 9824 --- [http-nio-9001-exec-7] i.s.userprofile.aspect.LoggingAspect     : Inside the After Throwing advice
+2023-01-16 15:14:15.185  INFO 9824 --- [http-nio-9001-exec-7] i.s.userprofile.aspect.LoggingAspect     : Target method is authenticateUser
+2023-01-16 15:14:15.186  INFO 9824 --- [http-nio-9001-exec-7] i.s.userprofile.aspect.LoggingAspect     : Exception thrown InValid credentials
+2023-01-16 15:14:15.187  INFO 9824 --- [http-nio-9001-exec-7] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-16 15:14:15.187  INFO 9824 --- [http-nio-9001-exec-7] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 15:14:15.187  INFO 9824 --- [http-nio-9001-exec-7] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-16 15:14:23.322  INFO 9824 --- [http-nio-9001-exec-8] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-16 15:14:23.322  INFO 9824 --- [http-nio-9001-exec-8] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 15:14:23.418  INFO 9824 --- [http-nio-9001-exec-8] i.s.userprofile.aspect.LoggingAspect     : Inside the After Throwing advice
+2023-01-16 15:14:23.418  INFO 9824 --- [http-nio-9001-exec-8] i.s.userprofile.aspect.LoggingAspect     : Target method is authenticateUser
+2023-01-16 15:14:23.418  INFO 9824 --- [http-nio-9001-exec-8] i.s.userprofile.aspect.LoggingAspect     : Exception thrown InValid credentials
+2023-01-16 15:14:23.420  INFO 9824 --- [http-nio-9001-exec-8] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-16 15:14:23.420  INFO 9824 --- [http-nio-9001-exec-8] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 15:14:23.420  INFO 9824 --- [http-nio-9001-exec-8] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-16 15:14:34.956  INFO 9824 --- [http-nio-9001-exec-9] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-16 15:14:34.957  INFO 9824 --- [http-nio-9001-exec-9] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 15:14:35.089  INFO 9824 --- [http-nio-9001-exec-9] i.s.userprofile.aspect.LoggingAspect     : Inside the After Returning advice
+2023-01-16 15:14:35.090  INFO 9824 --- [http-nio-9001-exec-9] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 15:14:35.090  INFO 9824 --- [http-nio-9001-exec-9] i.s.userprofile.aspect.LoggingAspect     : Returned value is <200 OK OK,{status=200, email=lee@gmail.com, jwt_token=eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2NzM4Njk0NzUsImlhdCI6MTY3Mzg2MjI3NSwic3ViIjoibGVlQGdtYWlsLmNvbSIsImlzcyI6ImluLnN0YWNrcm91dGUifQ.hsLaCYgT9E1k_VRGKZeG9tbSkenMphXD1zMJIKiDdJdDtnIY4Zg7QXZ_sKNWbzf09WisfNsMW-4VUKCN6pdkDw},[]>
+2023-01-16 15:14:35.090  INFO 9824 --- [http-nio-9001-exec-9] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-16 15:14:35.090  INFO 9824 --- [http-nio-9001-exec-9] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 15:14:35.090  INFO 9824 --- [http-nio-9001-exec-9] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-16 15:17:52.527  INFO 9824 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 15:22:52.531  INFO 9824 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 15:27:52.544  INFO 9824 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 15:32:52.557  INFO 9824 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 15:36:53.395  INFO 9824 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-PROFILE-SERVICE with eureka with status DOWN
+2023-01-16 15:36:53.415  INFO 9824 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1673863613415, current=DOWN, previous=UP]
+2023-01-16 15:36:53.514  INFO 9824 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/host.docker.internal:user-profile-service:9001: registering service...
+2023-01-16 15:36:54.191  INFO 9824 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/host.docker.internal:user-profile-service:9001 - registration status: 204
+2023-01-16 15:36:56.801  INFO 9824 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-16 15:36:57.099  INFO 9824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-16 15:36:57.992  INFO 9824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-16 15:36:58.018  INFO 9824 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-16 15:37:01.246  INFO 9824 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-01-16 15:37:02.646  INFO 9824 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/host.docker.internal:user-profile-service:9001 - deregister  status: 200
+2023-01-16 15:37:02.839  INFO 9824 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-01-16 16:27:50.355  INFO 12356 --- [main] i.s.userprofile.UserprofileApplication   : Starting UserprofileApplication using Java 17.0.5 on LAPTOP-RIEJ6Q5B with PID 12356 (C:\Users\Admin\Assignments\Practice\SpringBootHackathorn\contactapi\userprofile\target\classes started by Admin in C:\Users\Admin\Assignments\Practice\SpringBootHackathorn\contactapi)
+2023-01-16 16:27:50.374 DEBUG 12356 --- [main] i.s.userprofile.UserprofileApplication   : Running with Spring Boot v2.7.8-SNAPSHOT, Spring v5.3.25
+2023-01-16 16:27:50.375  INFO 12356 --- [main] i.s.userprofile.UserprofileApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-16 16:27:52.536  INFO 12356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-16 16:27:52.788  INFO 12356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 224 ms. Found 1 JPA repository interfaces.
+2023-01-16 16:27:53.345  INFO 12356 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0ee9a9ba-5df5-3f0f-a612-7660b716ec34
+2023-01-16 16:27:54.359  INFO 12356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-16 16:27:54.360  INFO 12356 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-16 16:27:54.360  INFO 12356 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-16 16:27:54.360  INFO 12356 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-16 16:27:54.363  INFO 12356 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-16 16:27:54.396  INFO 12356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-16 16:27:54.396  INFO 12356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-16 16:27:54.691  INFO 12356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-16 16:27:54.692  INFO 12356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4109 ms
+2023-01-16 16:27:55.220  INFO 12356 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-16 16:27:55.324  INFO 12356 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-16 16:27:55.716  INFO 12356 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-16 16:27:55.855  INFO 12356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-16 16:27:57.403  INFO 12356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-16 16:27:57.438  INFO 12356 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-16 16:27:58.683  INFO 12356 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-16 16:27:58.690  INFO 12356 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-16 16:27:58.875  WARN 12356 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-16 16:27:59.015  INFO 12356 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'contacts-service' URL not provided. Will try picking an instance via load-balancing.
+2023-01-16 16:28:02.561  INFO 12356 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-16 16:28:02.941  WARN 12356 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-16 16:28:02.998  INFO 12356 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-16 16:28:04.672  INFO 12356 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-16 16:28:04.687  INFO 12356 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 16:28:04.796  INFO 12356 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-16 16:28:04.797  INFO 12356 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-16 16:28:04.797  INFO 12356 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-16 16:28:04.797  INFO 12356 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-16 16:28:04.798  INFO 12356 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-16 16:28:04.798  INFO 12356 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-16 16:28:04.798  INFO 12356 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-16 16:28:11.418  INFO 12356 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-16 16:28:11.454  INFO 12356 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-16 16:28:11.459  INFO 12356 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-16 16:28:11.865  INFO 12356 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1673866691465 with initial instances count: 1
+2023-01-16 16:28:11.868  INFO 12356 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-PROFILE-SERVICE with eureka with status UP
+2023-01-16 16:28:11.868  INFO 12356 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1673866691868, current=UP, previous=STARTING]
+2023-01-16 16:28:11.871  INFO 12356 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/host.docker.internal:user-profile-service:9001: registering service...
+2023-01-16 16:28:11.908  INFO 12356 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/host.docker.internal:user-profile-service:9001 - registration status: 204
+2023-01-16 16:28:12.670  INFO 12356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-01-16 16:28:12.672  INFO 12356 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2023-01-16 16:28:13.440  INFO 12356 --- [main] i.s.userprofile.UserprofileApplication   : Started UserprofileApplication in 23.851 seconds (JVM running for 27.437)
+2023-01-16 16:28:47.543  INFO 12356 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-16 16:28:47.545  INFO 12356 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-16 16:28:47.548  INFO 12356 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-01-16 16:28:47.662  INFO 12356 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-16 16:28:47.663  INFO 12356 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 16:28:48.638  INFO 12356 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the After Returning advice
+2023-01-16 16:28:48.639  INFO 12356 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 16:28:48.640  INFO 12356 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Returned value is <200 OK OK,{status=200, jwt_token=eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2NzM4NzM5MjgsImlhdCI6MTY3Mzg2NjcyOCwic3ViIjoiUHVuZWV0QGdtYWlsLmNvbSIsImlzcyI6ImluLnN0YWNrcm91dGUifQ.QV9kVF_vwQdxK23qpNHa0fgBSkUy1pF-YqJxrTLiBTX9KZuKbxY9LDxZ6eNCVy2VVM-eqrMxkHBer8LHRh55gQ, email=Puneet@gmail.com},[]>
+2023-01-16 16:28:48.641  INFO 12356 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-16 16:28:48.641  INFO 12356 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 16:28:48.642  INFO 12356 --- [http-nio-9001-exec-1] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-16 16:32:43.569  INFO 12356 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-16 16:32:43.571  INFO 12356 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 16:32:43.673  INFO 12356 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the After Returning advice
+2023-01-16 16:32:43.675  INFO 12356 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 16:32:43.675  INFO 12356 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Returned value is <200 OK OK,{status=200, jwt_token=eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2NzM4NzQxNjMsImlhdCI6MTY3Mzg2Njk2Mywic3ViIjoiUHVuZWV0QGdtYWlsLmNvbSIsImlzcyI6ImluLnN0YWNrcm91dGUifQ.45AdjKDrwPQ2q__LoRIwuFUij3Kt9RUiJcmxTiqkBwjoW2wwztxmDDVj1ViW0Z6dea7Mm5aZ__S4DHOLSxzPHg, email=Puneet@gmail.com},[]>
+2023-01-16 16:32:43.678  INFO 12356 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-16 16:32:43.678  INFO 12356 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 16:32:43.678  INFO 12356 --- [http-nio-9001-exec-3] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-16 16:33:04.803  INFO 12356 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 16:38:04.815  INFO 12356 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 16:43:04.829  INFO 12356 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 16:48:04.857  INFO 12356 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 16:53:04.871  INFO 12356 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-16 16:56:40.742  INFO 12356 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Inside the before advice
+2023-01-16 16:56:40.744  INFO 12356 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 16:56:41.198  INFO 12356 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Inside the After Returning advice
+2023-01-16 16:56:41.199  INFO 12356 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 16:56:41.208  INFO 12356 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Returned value is <200 OK OK,{status=200, jwt_token=eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2NzM4NzU2MDEsImlhdCI6MTY3Mzg2ODQwMSwic3ViIjoiUHVuZWV0QGdtYWlsLmNvbSIsImlzcyI6ImluLnN0YWNrcm91dGUifQ.PKwKlHfFH32dkNqzcNiONb4c4oTq7zfcPl-Ix6Iu3rcqCe7iEAiz2Basn2XPkF5pOotH-FUmWmeeSFC2iwrZCw, email=Puneet@gmail.com},[]>
+2023-01-16 16:56:41.209  INFO 12356 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Inside the After advice
+2023-01-16 16:56:41.209  INFO 12356 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : Target method is loginUser
+2023-01-16 16:56:41.210  INFO 12356 --- [http-nio-9001-exec-5] i.s.userprofile.aspect.LoggingAspect     : loginUser completed execution
+2023-01-16 16:58:04.902  INFO 12356 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

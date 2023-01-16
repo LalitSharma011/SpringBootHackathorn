@@ -54,7 +54,7 @@ export default function MediaCard1() {
 
         <div className="col-12 col-md-6 col-lg-4 ho mt-3">
           <MDBCard alignment='center' className='paper'>
-            <MDBCardImage src='/assets/service3.jpg' className='user-height' position='top' alt='...' />
+            <MDBCardImage src='https://source.unsplash.com/900x600/?education,school' className='user-height' position='top' alt='...' />
             <MDBCardBody>
               <MDBCardTitle>Pay Education Fees</MDBCardTitle>
               <MDBCardText>
@@ -67,7 +67,7 @@ export default function MediaCard1() {
 
         <div className="col-12 col-md-6 col-lg-4 ho mt-3">
           <MDBCard alignment='center' className='paper'>
-            <MDBCardImage src='/assets/service4.jpg' className='user-height' position='top' alt='...' />
+            <MDBCardImage src='https://source.unsplash.com/900x600/?mobile,telephone' className='user-height' position='top' alt='...' />
             <MDBCardBody>
               <MDBCardTitle>Mobile Recharge</MDBCardTitle>
               <MDBCardText>
@@ -80,7 +80,7 @@ export default function MediaCard1() {
 
         <div className="col-12 col-md-6 col-lg-4 ho mt-3">
           <MDBCard alignment='center' className='paper'>
-            <MDBCardImage src='/assets/service5.jpg' className='user-height' position='top' alt='...' />
+            <MDBCardImage src='/assets/service5.png' className='user-height' position='top' alt='...' />
             <MDBCardBody>
               <MDBCardTitle>Credit Card Bill</MDBCardTitle>
               <MDBCardText>
@@ -93,7 +93,7 @@ export default function MediaCard1() {
 
         <div className="col-12 col-md-6 col-lg-4 ho mt-3">
           <MDBCard alignment='center' className='paper'>
-            <MDBCardImage src='/assets/service6.jpg' className='user-height' position='top' alt='...' />
+            <MDBCardImage src='https://source.unsplash.com/900x600/?cars' className='user-height' position='top' alt='...' />
             <MDBCardBody>
               <MDBCardTitle>Car Insaurance</MDBCardTitle>
               <MDBCardText>

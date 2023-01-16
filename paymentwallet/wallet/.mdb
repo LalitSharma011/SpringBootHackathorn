@@ -1,8 +1,8 @@
 {
-  "projectName": "paymentwalletapp",
+  "projectName": "springboothackathorn",
   "meta": {
     "type": "frontend"
   },
   "packageManager": "npm",
-  "hash": "2d6a86d4"
+  "hash": "5088eac3"
 }
