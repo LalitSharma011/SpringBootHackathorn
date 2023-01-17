@@ -18,69 +18,42 @@ import java.util.Optional;
 @Service
 public class UserServiceImpl implements UserService{
 
-//    private Logger logger=LoggerFactory.getLogger(UserServiceImpl.class);
     @Autowired
     private UserProfileRepository repository;
-
-    PasswordEncoder passwordEncoder;
-
 
     @Autowired
     private JWTGeneratorService jwtGeneratorService;
 
-//    @Override
-//    public User registerUser(User newUser) throws UserExistsException {
-//        if(repository.existsByEmail(newUser.getEmail())){
-////            logger.error("User already exists with the given email");
-//            throw new UserExistsException("User with the email already Exists");
-//        }
-//        this.passwordEncoder = new BCryptPasswordEncoder();
-//        String encodedPassword = this.passwordEncoder.encode((newUser.getPassword()));
-//        newUser.setPassword(encodedPassword);
-//        User user = repository.save(newUser);
-////        logger.info("User successfully registered");
-//        return user;
-//
-//    }
-
-
-@Override
-public User registerUser(User newUser) throws UserExistsException {
-    BCryptPasswordEncoder bcrypt = new BCryptPasswordEncoder();
-    String encryptedpwd = bcrypt.encode(newUser.getPassword());
-    newUser.setPassword(encryptedpwd);
-    if(repository.existsByEmail(newUser.getEmail())){
-//            logger.error("User already exixts with the given email");
-        throw new UserExistsException("User with the email already Exists");
-    }
+    //User with same email cannot register again
+    //If user enters a duplicate email, this method with throw UserExistsException
+    //If all ok, then user details will be registered in the SQL database
+    @Override
+    public User registerUser(User newUser) throws UserExistsException {
+      BCryptPasswordEncoder bcrypt = new BCryptPasswordEncoder();
+      String encryptedpwd = bcrypt.encode(newUser.getPassword());
+      newUser.setPassword(encryptedpwd);
+       if(repository.existsByEmail(newUser.getEmail())){
+           throw new UserExistsException("User with the email already Exists");
+        }
     User user = repository.save(newUser);
-//        logger.info("User successfully registered");
     return user;
 
 }
-
-
-
+   // If user enters the invalid credentials this method will throw the exception
     @Override
     public String authenticateUser(UserCredentials credentials) throws CredentialsMismatchException {
         BCryptPasswordEncoder bcrypt = new BCryptPasswordEncoder();
-//        logger.debug("Accessing database for getting user credentials");
         Optional<User> userByEmail = repository.getUserByEmail(credentials.getEmail());
         if(userByEmail.isEmpty()){
-//            logger.error("User not found with the given email");
             throw new CredentialsMismatchException("InValid credentials");
         }
         User user = userByEmail.get();
         if(bcrypt.matches(credentials.getPassword(),user.getPassword())){
-//        if (user.getPassword().equals(credentials.getPassword())){
-//            logger.info("user authenticated successfully");
             String token = jwtGeneratorService.generateToken(credentials.getEmail());
             return token;
         }else{
-//            logger.error("Password mismatch for the user with the given email");
             throw new CredentialsMismatchException("InValid credentials");
         }
-
 
     }
 

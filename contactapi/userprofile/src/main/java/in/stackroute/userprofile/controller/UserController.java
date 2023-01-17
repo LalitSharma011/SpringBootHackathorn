@@ -20,11 +20,21 @@ public class UserController {
     @Autowired
     private UserService service;
 
+
+    // For user registration. Here registerUser method will be called.
+    // User with same email cannot register again
+    // If user enters a duplicate email, this method will throw UserExistsException
+    // If all ok, then user details will be registered in the SQL database
     @PostMapping("register")
     public ResponseEntity<User> registerUser(@RequestBody User newUser) throws UserExistsException {
         User addedUser = service.registerUser(newUser);
         return new ResponseEntity<>(addedUser, HttpStatus.CREATED);
     }
+
+
+     //For user login loginUser method will be called.
+     // If the user enters incorrect credentials then this method will throw CredentialsMismatchException
+     // If the credentials are correct, then the user will be able to log in.
 
     @PostMapping("login")
     public ResponseEntity<?> loginUser(@RequestBody UserCredentials credentials, HttpSession session) throws CredentialsMismatchException {

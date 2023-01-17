@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.Optional;
@@ -14,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
 @ExtendWith(SpringExtension.class)
+//@SpringBootTest
 class UserProfileRepositoryTest {
 
     @Autowired
@@ -41,12 +43,9 @@ class UserProfileRepositoryTest {
 
         assertTrue(optionalUser.isPresent());
         User user = optionalUser.get();
-        assertEquals("Charlie",user.getFirstname());
+        assertEquals("charlie",user.getFirstname());
 
     }
-
-    //Configure H2 Database
-    //write the test case for empty optional
 
 }
 
