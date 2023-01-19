@@ -40,6 +40,8 @@ export default function SignInSide() {
     showPassword: false
   });
 
+  const userEmail = "";
+  const userPass = "";
 
   const handleChange1 = (prop) => (event) => {
     setValues({ ...values, [prop]: event.target.value });
@@ -66,33 +68,33 @@ export default function SignInSide() {
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
-      email: "",
-      password: "",
+      // email: "",
+      // password: "",
     },
     onSubmit: values => {
       console.log("submit");
-      fetch("http://localhost:9000/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(values)
-      })
-        .then(res => res.json())
-        .then(data => {
-          console.log(data);
-          console.log(data.access_token);
+      // fetch("http://localhost:9000/auth/login", {
+        // method: "POST",
+        // headers: {
+        //   "Content-Type": "application/json"
+        // },
+      //   body: JSON.stringify(values)
+      // })
+      //   .then(res => res.json())
+        // .then(data => {
+        //   console.log(data);
+        //   console.log(data.access_token);
 
-          if (data.status === 200) {
-            sessionStorage.setItem("jwt_token", data.access_token)  //use session storage to remove token on closure of browser
-            sessionStorage.setItem("userName", JSON.stringify(data.userData)) //to get data of user in the state, we can now print user details when they log in
+          if (userEmail === "abc@gmail.com" && userPass === "123") {
+            // sessionStorage.setItem("jwt_token", data.access_token)  //use session storage to remove token on closure of browser
+            // sessionStorage.setItem("userName", JSON.stringify(data.userData)) //to get data of user in the state, we can now print user details when they log in
             navigate("/products")
 
           }
           else {
             setOpen(true);
           }
-        })
+        // })
     },
     validationSchema: yup.object().shape({
       email: yup.string()
@@ -149,6 +151,7 @@ export default function SignInSide() {
                 id="email"
                 label="Email your Email"
                 name="email"
+                placeholder="abc@gmail.com"
                 autoFocus
                 onCopy={handleChange}
                 onPaste={handleChange}
